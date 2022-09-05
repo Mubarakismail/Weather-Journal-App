@@ -31,24 +31,16 @@ function listening() {
 }
 
 // GET route
-app.get("/all", sendData);
+app.get("/getWeather", getInfo);
 
-function sendData(request, response) {
+function getInfo(request, response) {
   response.send(projectData);
 }
 
 // POST route
-app.post("/add", callBack);
+app.post("/addFeelings", addFeelings);
 
-function callBack(req, res) {
-  res.send("POST received");
-}
-
-// POST an animal
-const data = [];
-
-app.post("/animal", addAnimal);
-
-function addAnimal(req, res) {
-  data.push(req.body);
+function addFeelings(req, res) {
+  projectData.feelings = req.body.feelings;
+  res.send(projectData);
 }
