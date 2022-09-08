@@ -2,7 +2,7 @@ body {
   background: #fffff8;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0px;
-  padding: 0 0 0 10px;
+  padding: 0px;
 }
 
 #app {
@@ -20,15 +20,43 @@ body {
 
 .holder {
   font-weight: bold;
+  padding-left: 10px;
+}
+.headline {
+  background-color: #000;
+  color: #f0d43a;
   font-size: 30px;
-  width: 100%;
-  height: 10%;
+  height: 50px;
+}
+
+.zip {
+  margin-top: 20px;
+}
+
+.postal_sign {
+  color: red;
+  border: 1px black;
+}
+
+.green_heart {
+  color: green;
 }
 
 .entry {
-  background: rgba(59, 74, 107, 0.4);
+  background: rgba(107, 107, 107, 0.4);
+  margin-top: 20px;
+  width: 50%;
+}
+.date {
+  color: rgb(0, 152, 199);
+}
+.temperature {
+  color: rgb(2, 141, 2);
 }
 
+.red_heart {
+  color: red;
+}
 #entryHolder {
 }
 
@@ -56,30 +84,25 @@ input {
   display: block;
   height: 60px;
   width: 320px;
-  background: #22b2da;
-  color: #f0d43a;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
-  border: none;
 }
 
 button {
   width: 400px;
   height: 100px;
-  background: #3b4a6b;
-  color: #f0d43a;
+  background: #0c101a;
   font-size: 26px;
+  color: #f0d43a;
   font-family: "Oswald", sans-serif;
-  border: none;
   box-shadow: 2px 4px 5px #444;
+  display: block;
 }
 h1 {
   font-size: 36px;
 }
 
 textarea {
-  background: #22b2da;
-  color: #f0d43a;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
 }
@@ -93,18 +116,15 @@ button:focus {
 /* Style for Placeholder Text*/
 ::placeholder {
   /* Firefox, Chrome, Opera */
-  color: #f0d43a;
   font-family: "Oswald", sans-serif;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #f0d43a;
   font-family: "Oswald", sans-serif;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #f0d43a;
   font-family: "Oswald", sans-serif;
 }
