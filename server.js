@@ -37,10 +37,18 @@ function getInfo(request, response) {
   response.send(projectData);
 }
 
+app.get('/allData', getAll);
+
+function getAll(req, res) {
+  res.send(projectData);
+}
+
 // POST route
 app.post("/addFeelings", addFeelings);
 
 function addFeelings(req, res) {
   projectData.feelings = req.body.feelings;
+  projectData.date = req.body.date;
+  projectData.temperature = req.body.temperature;
   res.send(projectData);
 }
